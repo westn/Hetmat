@@ -19,7 +19,7 @@ const Recipe: FC<IProps> = ({
   return (
     <main className="container mx-auto">
       <h2 className="text-2xl font-bold">{title}</h2>
-      <div>
+      <div className="italic text-sm">
         {amount} {unit}
       </div>
       <Ingredients ingredients={ingredients} />
