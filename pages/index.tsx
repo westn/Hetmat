@@ -17,7 +17,7 @@ const Home: FC = () => {
             Title
           </p>
           <p className="text-sm text-gray-600 font-hairline">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elite.
           </p>
         </div>
         <div className="mt-6">
