@@ -8,9 +8,6 @@ const Home: FC = () => {
       <Head>
         <title>Hetmat</title>
       </Head>
-      <header>
-        <h1>Hetmat</h1>
-      </header>
       <div role="main">
         <div className="bg-white shadow p-3 rounded lg:w-64 mx-auto mt-8">
           <div>
