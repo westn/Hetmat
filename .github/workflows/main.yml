@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: '12'
       
-      - name: Npm install
-        run: npm install
+      - name: Npm Continuous Integration install
+        run: npm ci
       
       - name: Run combined build and test
         run: npm test
