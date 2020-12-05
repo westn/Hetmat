@@ -1,4 +1,6 @@
 import { FC } from "react";
+import Head from "next/head";
+
 import { Ingredients, Instructions } from "../organisms";
 
 interface IProps {
@@ -17,14 +19,19 @@ const Recipe: FC<IProps> = ({
   instructions,
 }: IProps) => {
   return (
-    <main className="container mx-auto">
-      <h2 className="text-2xl font-bold">{title}</h2>
-      <div className="italic text-sm">
-        {amount} {unit}
-      </div>
-      <Ingredients ingredients={ingredients} />
-      <Instructions instructions={instructions} />
-    </main>
+    <>
+      <Head>
+        <title>{title} - Hetmat</title>
+      </Head>
+      <main className="container mx-auto">
+        <h2 className="text-2xl font-bold">{title}</h2>
+        <div className="italic text-sm">
+          {amount} {unit}
+        </div>
+        <Ingredients ingredients={ingredients} />
+        <Instructions instructions={instructions} />
+      </main>
+    </>
   );
 };
 
