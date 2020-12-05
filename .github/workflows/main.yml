@@ -1,4 +1,4 @@
-name: CI
+name: Continuous Integration
 
 on:
   pull_request:
@@ -17,6 +17,9 @@ jobs:
       
       - name: Npm Continuous Integration install
         run: npm ci
+
+      - name: Lint check
+        run: npm run lint
       
       - name: Build
         run: npm run build

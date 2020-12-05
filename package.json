@@ -11,7 +11,8 @@
     "tailwind-config-viewer": "tailwind-config-viewer -o",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test": "next build && next start & wait-on http://localhost:3000 && cypress run"
+    "test": "next build && next start & wait-on http://localhost:3000 && cypress run",
+    "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --ignore-pattern node_modules/"
   },
   "dependencies": {
     "cypress-axe": "^0.12.0",
