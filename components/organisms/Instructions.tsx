@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { ComponentTitle } from "../atoms";
 
 interface IProps {
   instructions: string[];
@@ -7,11 +8,12 @@ interface IProps {
 const Instructions: FC<IProps> = ({ instructions }: IProps) => {
   return (
     <div>
-      {instructions.map((instruction, index) => (
-        <div key={instruction}>
-          {index + 1}. {instruction}
-        </div>
-      ))}
+      <ComponentTitle title="Instruktioner" />
+      <ol className="list-decimal list-inside">
+        {instructions.map((instruction) => (
+          <li key={instruction}>{instruction}</li>
+        ))}
+      </ol>
     </div>
   );
 };

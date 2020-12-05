@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Recipe } from "../components/templates";
 
+const title = "Världens bästa våfflor";
 const amount = 4;
 const unit = "st";
 
@@ -27,6 +28,7 @@ const instructions = [
 const RecipePage: FC = () => {
   return (
     <Recipe
+      title={title}
       amount={amount}
       unit={unit}
       ingredients={ingredients}
