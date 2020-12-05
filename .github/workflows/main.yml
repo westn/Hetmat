@@ -18,5 +18,11 @@ jobs:
       - name: Npm Continuous Integration install
         run: npm ci
       
-      - name: Run combined build and test
-        run: npm test
+      - name: Build
+        run: npm run build
+
+      - name: Start server and wait
+        run: npm run start-wait
+      
+      - name: End-to-end testing
+        run: npm cy:run
