@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start-wait": "next start & wait-on http://localhost:3000",
     "export": "next build && next export",
-    "tailwind-config-viewer": "tailwind-config-viewer -o"
+    "tailwind-config-viewer": "tailwind-config-viewer -o",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "next build && next start & wait-on http://localhost:3000 && cypress run"
   },
   "dependencies": {
+    "cypress-axe": "^0.12.0",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -17,11 +22,15 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@types/cypress-axe": "^0.8.0",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
+    "autoprefixer": "^10.0.4",
+    "axe-core": "^4.1.1",
     "babel-plugin-module-resolver": "^4.0.0",
+    "cypress": "^6.0.1",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
@@ -33,6 +42,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.2.1",
     "tailwind-config-viewer": "^1.2.4",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "wait-on": "^5.2.0"
   }
 }

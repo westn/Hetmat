@@ -8,21 +8,29 @@ const Home: FC = () => {
       <Head>
         <title>Hetmat</title>
       </Head>
-      <div className="bg-white shadow p-3 rounded lg:w-64 mx-auto mt-8">
-        <div>
-          <div className="bg-cover bg-center bg-gray-300 h-32 rounded" />
-        </div>
-        <div className="mt-6">
-          <p className="text-lg text-bold tracking-wide text-gray-600 mb-2">
-            Title
-          </p>
-          <p className="text-sm text-gray-600 font-hairline">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="mt-6">
-          <Button />
-          <Text />
+      <header>
+        <h1>Hetmat</h1>
+      </header>
+      <div role="main">
+        <div className="bg-white shadow p-3 rounded lg:w-64 mx-auto mt-8">
+          <div>
+            <div className="bg-cover bg-center bg-gray-300 h-32 rounded" />
+          </div>
+          <div className="mt-6">
+            <p
+              className="text-lg text-bold tracking-wide text-gray-600 mb-2"
+              data-test="title"
+            >
+              Recepttitle
+            </p>
+            <p className="text-sm text-gray-600 font-hairline">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elite.
+            </p>
+          </div>
+          <div className="mt-6">
+            <Button />
+            <Text />
+          </div>
         </div>
       </div>
     </>
