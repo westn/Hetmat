@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start-wait": "next start & wait-on http://localhost:3000",
     "export": "next build && next export",
     "tailwind-config-viewer": "tailwind-config-viewer -o",
     "cy:open": "cypress open",
