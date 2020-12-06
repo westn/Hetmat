@@ -7,7 +7,7 @@ interface IProps {
   title: string;
   amount?: number;
   unit?: string;
-  timeInMinutes?: number,
+  timeInMinutes?: number;
   ingredients: Array<(number | string)[]>; // TODO: Should be tuple, [number, string, string]
   instructions: string[];
 }
