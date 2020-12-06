@@ -4,15 +4,20 @@ import NextLink from "next/link";
 
 interface IProps {
   href: string;
+  className?: string;
   children: ReactNode;
 }
 
-const Link: FC<IProps> = ({ href, children }: IProps) => {
+const Link: FC<IProps> = ({ href, children, className }: IProps) => {
   return (
     <NextLink href={href}>
-      <a>{children}</a>
+      <a className={className}>{children}</a>
     </NextLink>
   );
+};
+
+Link.defaultProps = {
+  className: undefined,
 };
 
 export default Link;
