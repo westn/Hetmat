@@ -6,20 +6,13 @@ interface IProps {
   href: string;
   className?: string;
   dataTest?: string;
-  label: string;
   children: ReactNode;
 }
 
-const Link: FC<IProps> = ({
-  href,
-  children,
-  className,
-  dataTest,
-  label,
-}: IProps) => {
+const Link: FC<IProps> = ({ href, children, className, dataTest }: IProps) => {
   return (
     <NextLink href={href}>
-      <a className={className} data-test={dataTest} aria-label={label}>
+      <a className={className} data-test={dataTest}>
         {children}
       </a>
     </NextLink>
