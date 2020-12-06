@@ -12,7 +12,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test": "next build && next start & wait-on http://localhost:3000 && cypress run",
-    "lint": "eslint \"**/*.tsx\" --ignore-pattern node_modules/"
+    "lint": "eslint pages/** components/** cypress/integration/**"
+    
   },
   "dependencies": {
     "cypress-axe": "^0.12.0",

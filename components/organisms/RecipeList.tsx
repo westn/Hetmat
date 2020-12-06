@@ -1,5 +1,6 @@
 import { ChangeEvent, FC, useCallback, useState } from "react";
 import Link from "next/link";
+import { SearchField } from "../molecules";
 
 interface RecipeTitleType {
   title: string;
@@ -26,17 +27,7 @@ const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
   return (
     <div>
       <div className="mb-2 mx-auto">
-        <label htmlFor="search">
-          <span className="block">Sök recept</span>
-          <input
-            type="text"
-            id="search"
-            name="search"
-            className="border border-gray-400 w-full px-3 py-1 rounded-sm"
-            placeholder="Världens bästa våfflor"
-            onChange={searchRecipes}
-          />
-        </label>
+        <SearchField searchAction={searchRecipes} />
       </div>
       <ul className="text-center">
         {filteredRecipes.map((recipeTitle) => (
