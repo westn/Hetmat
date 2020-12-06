@@ -12,7 +12,7 @@ const SearchField: FC<IProps> = ({ searchAction }: IProps) => {
         type="text"
         id="search"
         name="search"
-        className="border border-gray-400 w-full px-3 py-1 rounded-sm"
+        className="border border-gray-400 w-full px-3 py-2 rounded-sm"
         placeholder="Världens bästa våfflor"
         onChange={searchAction}
       />
