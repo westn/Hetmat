@@ -4,9 +4,11 @@ import { FC } from "react";
 const Header: FC = () => {
   return (
     <header className="text-center py-3">
-      <Link href="/">
-        <h1 className="text-4xl cursor-pointer hover:text-gray-700">Hetmat</h1>
-      </Link>
+      <h1 className="text-4xl">
+        <Link href="/">
+          <span className="cursor-pointer hover:text-gray-700">Hetmat</span>
+        </Link>
+      </h1>
     </header>
   );
 };
