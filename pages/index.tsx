@@ -7,6 +7,7 @@ const recipeTitles = [
   { title: "Tacokrydda", path: "/tacokrydda" },
   { title: "Chokladbollar", path: "/chokladbollar" },
   { title: "Hamburgare", path: "/hamburgare" },
+  { title: "Kyckling à la Malin", path: "/kyckling-a-la-malin" },
   { title: "Ugnsbakad lax med pesto", path: "/ugnsbakad-lax-med-pesto" },
   { title: "Fläskfilé i färskostsås", path: "/flaskfile-i-farskostsas" },
   {
