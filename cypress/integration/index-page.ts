@@ -11,12 +11,7 @@ describe("Index page", () => {
 
   it("should be accessible", () => {
     cy.injectAxe();
-    cy.checkA11y(undefined, {
-      runOnly: {
-        type: "tag",
-        values: ["wcag21a", "wcag21aa"],
-      },
-    });
+    cy.checkA11y();
   });
 });
 
