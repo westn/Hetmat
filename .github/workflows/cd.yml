@@ -33,19 +33,21 @@ jobs:
       - name: Export static files
         run: npm run export
 
-      - name: Sync files
+      - name: Sync htaccess & clear files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp01.binero.se
           username: 166107_github
           password: ${{ secrets.ftp_password }}
           dangerous-clean-slate: true
-          local-dir: ./out/
+          local-dir: ./upload/
 
-      - name: Sync htaccess
+      - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp01.binero.se
           username: 166107_github
           password: ${{ secrets.ftp_password }}
-          local-dir: ./upload/
+          local-dir: ./out/
+
+      
