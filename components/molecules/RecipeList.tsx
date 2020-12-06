@@ -14,7 +14,8 @@ const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
           <Link href={recipeTitle.path}>
             <button
               type="button"
-              className="w-full text-2xl bg-yellow-500 mb-1 text-white py-1 rounded-sm hover:bg-yellow-600"
+              className="w-full text-2xl bg-yellow-600 mb-1 text-white py-1 rounded-sm hover:bg-yellow-700"
+              data-test="recipebutton"
             >
               {recipeTitle.title}
             </button>
