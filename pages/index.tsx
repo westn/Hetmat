@@ -6,6 +6,7 @@ const recipeTitles = [
   { title: "Världens bästa våfflor", path: "/varldens-basta-vafflor" },
   { title: "Tacokrydda", path: "/tacokrydda" },
   { title: "Chokladbollar", path: "/chokladbollar" },
+  { title: "Hamburgare", path: "/hamburgare" },
 ];
 
 const Home: FC = () => {

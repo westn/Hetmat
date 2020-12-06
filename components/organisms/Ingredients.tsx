@@ -12,7 +12,12 @@ const Ingredients: FC<IProps> = ({ ingredients }: IProps) => {
       <div className="grid grid-cols-2">
         {ingredients.map(([amount, unit, text]) => (
           <div key={text}>
-            {amount} {unit} {text}
+            {amount > 0 && (
+              <>
+                {amount}&nbsp;{unit}&nbsp;
+              </>
+            )}
+            {text}
           </div>
         ))}
       </div>
