@@ -23,7 +23,7 @@ const Recipe: FC<IProps> = ({
       <Head>
         <title>{title} - Hetmat</title>
       </Head>
-      <main className="container mx-auto">
+      <main className="container mx-auto max-w-2xl px-4 pb-4">
         <h2 className="text-2xl font-bold">{title}</h2>
         <div className="italic text-sm">
           {amount} {unit}

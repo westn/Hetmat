@@ -4,8 +4,9 @@ describe("Index page", () => {
     cy.visit("/");
   });
 
-  it("should have a title", () => {
-    cy.get('[data-test="title"]').should("have.text", "Recepttitle");
+  it("should have a recipe", () => {
+    const button = cy.get('[data-test="recipebutton"]').first();
+    button.should("have.text", "Världens bästa våfflor");
   });
 
   it("should be accessible", () => {

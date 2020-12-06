@@ -1,6 +1,11 @@
 import Head from "next/head";
 import { FC } from "react";
-import { Button, Text } from "../components";
+import RecipeList from "../components/organisms/RecipeList";
+
+const recipeTitles = [
+  { title: "Världens bästa våfflor", path: "/varldens-basta-vafflor" },
+  { title: "Tacokrydda", path: "/tacokrydda" },
+];
 
 const Home: FC = () => {
   return (
@@ -8,28 +13,12 @@ const Home: FC = () => {
       <Head>
         <title>Hetmat</title>
       </Head>
-      <div role="main">
-        <div className="bg-white shadow p-3 rounded lg:w-64 mx-auto mt-8">
-          <div>
-            <div className="bg-cover bg-center bg-gray-300 h-32 rounded" />
-          </div>
-          <div className="mt-6">
-            <p
-              className="text-lg text-bold tracking-wide text-gray-600 mb-2"
-              data-test="title"
-            >
-              Recepttitle
-            </p>
-            <p className="text-sm text-gray-600 font-hairline">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elite.
-            </p>
-          </div>
-          <div className="mt-6">
-            <Button />
-            <Text />
-          </div>
-        </div>
-      </div>
+      <main className="container mx-auto max-w-2xl px-4 pb-2">
+        <RecipeList recipeTitles={recipeTitles} />
+      </main>
+      <footer className="container mx-auto max-w-2xl text-right text-xs px-4 pb-4">
+        A Fredrik Nordell production
+      </footer>
     </>
   );
 };
