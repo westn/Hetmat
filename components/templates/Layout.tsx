@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { Header } from "../organisms";
+import { Header, Footer } from "../organisms";
 
 interface IProps {
   children: ReactNode;
@@ -10,6 +10,7 @@ const Layout: FC<IProps> = ({ children }: IProps) => {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };
