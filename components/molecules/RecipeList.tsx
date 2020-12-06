@@ -1,0 +1,28 @@
+import { FC } from "react";
+import Link from "next/link";
+import { RecipeTitleType } from "../../types/RecipeTitleType";
+
+interface IProps {
+  recipeTitles: RecipeTitleType[];
+}
+
+const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
+  return (
+    <ul className="text-center">
+      {recipeTitles.map((recipeTitle) => (
+        <li key={recipeTitle.path}>
+          <Link href={recipeTitle.path}>
+            <button
+              type="button"
+              className="w-full text-2xl bg-yellow-500 mb-1 text-white py-1 rounded-sm hover:bg-yellow-600"
+            >
+              {recipeTitle.title}
+            </button>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+export default RecipeList;

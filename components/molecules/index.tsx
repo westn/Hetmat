@@ -1,4 +1,4 @@
 import SearchField from "./SearchField";
-import Dummy from "./Dummy";
+import RecipeList from "./RecipeList";
 
-export { SearchField, Dummy };
+export { SearchField, RecipeList };

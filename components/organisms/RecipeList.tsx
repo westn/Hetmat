@@ -1,22 +1,19 @@
 import { ChangeEvent, FC, useCallback, useState } from "react";
-import Link from "next/link";
-import { SearchField } from "../molecules";
-
-interface RecipeTitleType {
-  title: string;
-  path: string;
-}
+import { SearchField, RecipeList as RecipeListMolucule } from "../molecules";
+import { RecipeTitleType } from "../../types/RecipeTitleType";
 
 interface IProps {
   recipeTitles: RecipeTitleType[];
 }
 
 const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
-  const [filteredRecipes, setFilteredRecipes] = useState(recipeTitles);
+  const [filteredRecipeTitles, setFilteredRecipeTitles] = useState(
+    recipeTitles
+  );
   const searchRecipes = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
       const cmpString = event.target.value.toLocaleLowerCase();
-      setFilteredRecipes(
+      setFilteredRecipeTitles(
         recipeTitles.filter(
           ({ title }) => title.toLocaleLowerCase().indexOf(cmpString) !== -1
         )
@@ -29,20 +26,7 @@ const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
       <div className="mb-2 mx-auto">
         <SearchField searchAction={searchRecipes} />
       </div>
-      <ul className="text-center">
-        {filteredRecipes.map((recipeTitle) => (
-          <li key={recipeTitle.path}>
-            <Link href={recipeTitle.path}>
-              <button
-                type="button"
-                className="w-full text-2xl bg-yellow-500 mb-1 text-white py-1 rounded-sm hover:bg-yellow-600"
-              >
-                {recipeTitle.title}
-              </button>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <RecipeListMolucule recipeTitles={filteredRecipeTitles} />
     </div>
   );
 };
