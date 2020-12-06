@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Link from "next/link";
+import { Link } from "../atoms";
 import { RecipeTitleType } from "../../types/RecipeTitleType";
 
 interface IProps {
