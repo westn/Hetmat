@@ -10,6 +10,10 @@ const recipeTitles = [
   { title: "Ugnsbakad lax med pesto", path: "/ugnsbakad-lax-med-pesto" },
   { title: "Fläskfilé i färskostsås", path: "/flaskfile-i-farskostsas" },
   {
+    title: "Krämig fläskfilépasta med svamp och spenat",
+    path: "/kramig-flaskfilepasta-med-svamp-och-spenat",
+  },
+  {
     title: "Älgköttbullar från Jämtland",
     path: "/algkottbullar-fran-jamtland",
   },
