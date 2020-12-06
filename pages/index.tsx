@@ -5,6 +5,7 @@ import RecipeList from "../components/organisms/RecipeList";
 const recipeTitles = [
   { title: "Världens bästa våfflor", path: "/varldens-basta-vafflor" },
   { title: "Tacokrydda", path: "/tacokrydda" },
+  { title: "Chokladbollar", path: "/chokladbollar" },
 ];
 
 const Home: FC = () => {
