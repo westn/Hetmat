@@ -11,14 +11,12 @@ const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
     <ul className="text-center">
       {recipeTitles.map((recipeTitle) => (
         <li key={recipeTitle.path}>
-          <Link href={recipeTitle.path}>
-            <button
-              type="button"
-              className="w-full text-2xl bg-yellow-600 mb-1 text-white rounded-sm hover:bg-yellow-700 p-2"
-              data-test="recipebutton"
-            >
-              {recipeTitle.title}
-            </button>
+          <Link
+            href={recipeTitle.path}
+            className="w-full text-2xl bg-yellow-600 mb-1 text-white rounded-sm hover:bg-yellow-700 p-2 block"
+            dataTest="recipebutton"
+          >
+            {recipeTitle.title}
           </Link>
         </li>
       ))}
