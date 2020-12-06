@@ -15,6 +15,7 @@ const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
             href={recipeTitle.path}
             className="w-full text-2xl bg-yellow-600 mb-1 text-white rounded-sm hover:bg-yellow-700 p-2 block"
             dataTest="recipebutton"
+            label={recipeTitle.title}
           >
             {recipeTitle.title}
           </Link>
