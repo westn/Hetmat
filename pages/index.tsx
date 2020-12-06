@@ -7,6 +7,10 @@ const recipeTitles = [
   { title: "Tacokrydda", path: "/tacokrydda" },
   { title: "Chokladbollar", path: "/chokladbollar" },
   { title: "Hamburgare", path: "/hamburgare" },
+  {
+    title: "Älgköttbullar från Jämtland",
+    path: "/algkottbullar-fran-jamtland",
+  },
 ];
 
 const Home: FC = () => {
