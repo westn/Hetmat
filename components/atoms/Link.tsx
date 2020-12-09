@@ -12,7 +12,7 @@ interface IProps {
 const Link: FC<IProps> = ({ href, children, className, dataTest }: IProps) => {
   return (
     <NextLink href={href}>
-      <a className={className} data-test={dataTest}>
+      <a className={className} data-testid={dataTest}>
         {children}
       </a>
     </NextLink>
