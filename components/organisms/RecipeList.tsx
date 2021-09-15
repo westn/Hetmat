@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, useCallback, useState } from "react";
+import { ChangeEvent, useCallback, useState } from "react";
 import { SearchField, RecipeList as RecipeListMolucule } from "../molecules";
 import { RecipeTitleType } from "../../types/RecipeTitleType";
 
@@ -6,14 +6,12 @@ interface IProps {
   recipeTitles: RecipeTitleType[];
 }
 
-const RecipeList: FC<IProps> = ({ recipeTitles }: IProps) => {
-  const [filteredRecipeTitles, setFilteredRecipeTitles] = useState(
-    recipeTitles
-  );
+const RecipeList = ({ recipeTitles }: IProps): JSX.Element => {
+  const [filteredRecipeTitles, setFilteredTitles] = useState(recipeTitles);
   const searchRecipes = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
       const cmpString = event.target.value.toLocaleLowerCase();
-      setFilteredRecipeTitles(
+      setFilteredTitles(
         recipeTitles.filter(
           ({ title }) => title.toLocaleLowerCase().indexOf(cmpString) !== -1
         )

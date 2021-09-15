@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { FC } from "react";
 import RecipeList from "../components/organisms/RecipeList";
 
 const recipeTitles = [
@@ -24,17 +23,15 @@ const recipeTitles = [
   },
 ];
 
-const Home: FC = () => {
-  return (
-    <>
-      <Head>
-        <title>Hetmat</title>
-      </Head>
-      <main className="container mx-auto max-w-2xl px-4 pb-2">
-        <RecipeList recipeTitles={recipeTitles} />
-      </main>
-    </>
-  );
-};
+const Home = (): JSX.Element => (
+  <>
+    <Head>
+      <title>Hetmat</title>
+    </Head>
+    <main className="container mx-auto max-w-2xl px-4 pb-2">
+      <RecipeList recipeTitles={recipeTitles} />
+    </main>
+  </>
+);
 
 export default Home;
