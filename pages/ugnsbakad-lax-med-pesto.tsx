@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Recipe } from "../components/templates";
 
 const title = "Ugnsbakad lax med pesto";
@@ -24,17 +23,15 @@ const instructions = [
   "Strö över pinjenötterna.",
 ];
 
-const RecipePage: FC = () => {
-  return (
-    <Recipe
-      title={title}
-      amount={amount}
-      unit={unit}
-      timeInMinutes={timeInMinutes}
-      ingredients={ingredients}
-      instructions={instructions}
-    />
-  );
-};
+const RecipePage = (): JSX.Element => (
+  <Recipe
+    title={title}
+    amount={amount}
+    unit={unit}
+    timeInMinutes={timeInMinutes}
+    ingredients={ingredients}
+    instructions={instructions}
+  />
+);
 
 export default RecipePage;

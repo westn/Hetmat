@@ -22,8 +22,6 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:import/typescript",
     "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react",
   ],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".ts", ".tsx"] }],

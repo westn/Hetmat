@@ -1,7 +1,3 @@
-import { FC } from "react";
-
-const Dummy: FC = () => {
-  return <>Hello</>;
-};
+const Dummy = (): JSX.Element => <>Hello</>;
 
 export default Dummy;
