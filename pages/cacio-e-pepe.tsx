@@ -7,8 +7,8 @@ const unit = "portion";
 const ingredients = [
   [170, "g", "spaghetti"],
   [7, "dl", "vatten"],
-  [1, "-", "salt"],
-  [1, "-", "svartpeppar"],
+  [0, "", "salt"],
+  [0, "", "svartpeppar"],
   [70, "g", "Riven Pecorino"],
 ];
 

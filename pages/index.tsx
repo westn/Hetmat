@@ -21,6 +21,7 @@ const recipeTitles = [
     title: "Älgköttbullar från Jämtland",
     path: "/algkottbullar-fran-jamtland",
   },
+  { title: "Cacio e Pepe", path: "/cacio-e-pepe" },
 ];
 
 const Home = (): JSX.Element => (
