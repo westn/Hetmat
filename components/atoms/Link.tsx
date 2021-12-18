@@ -9,13 +9,20 @@ interface IProps {
   children: ReactNode;
 }
 
-const Link = ({ href, children, className, dataTest }: IProps): JSX.Element => (
-  <NextLink href={href}>
-    <a className={className} data-test={dataTest}>
-      {children}
-    </a>
-  </NextLink>
-);
+const Link = function Link({
+  href,
+  children,
+  className,
+  dataTest,
+}: IProps): JSX.Element {
+  return (
+    <NextLink href={href}>
+      <a className={className} data-test={dataTest}>
+        {children}
+      </a>
+    </NextLink>
+  );
+};
 
 Link.defaultProps = {
   className: undefined,

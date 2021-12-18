@@ -17,13 +17,15 @@ const instructions = [
   "Använd 2 msk till 500 gram köttfärs.",
 ];
 
-const RecipePage = (): JSX.Element => (
-  <Recipe
-    title={title}
-    timeInMinutes={timeInMinutes}
-    ingredients={ingredients}
-    instructions={instructions}
-  />
-);
+const RecipePage = function RecipePage(): JSX.Element {
+  return (
+    <Recipe
+      title={title}
+      timeInMinutes={timeInMinutes}
+      ingredients={ingredients}
+      instructions={instructions}
+    />
+  );
+};
 
 export default RecipePage;
