@@ -1,3 +1,5 @@
-const Text = (): JSX.Element => <p className="font-mono">A developer thing</p>;
+const Text = function Text(): JSX.Element {
+  return <p className="font-mono">A developer thing</p>;
+};
 
 export default Text;

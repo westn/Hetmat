@@ -6,7 +6,7 @@ interface IProps {
   recipeTitles: RecipeTitleType[];
 }
 
-const RecipeList = ({ recipeTitles }: IProps): JSX.Element => {
+const RecipeList = function RecipeList({ recipeTitles }: IProps): JSX.Element {
   const [filteredRecipeTitles, setFilteredTitles] = useState(recipeTitles);
   const searchRecipes = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {

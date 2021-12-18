@@ -1,3 +1,5 @@
-const Dummy = (): JSX.Element => <>Hello</>;
+const Dummy = function Dummy(): JSX.Element {
+  return <>Hello</>;
+};
 
 export default Dummy;

@@ -5,12 +5,14 @@ interface IProps {
   children: ReactNode;
 }
 
-const Layout = ({ children }: IProps): JSX.Element => (
-  <>
-    <Header />
-    {children}
-    <Footer />
-  </>
-);
+const Layout = function Layout({ children }: IProps): JSX.Element {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 export default Layout;

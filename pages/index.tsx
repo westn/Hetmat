@@ -24,15 +24,17 @@ const recipeTitles = [
   { title: "Cacio e Pepe", path: "/cacio-e-pepe" },
 ];
 
-const Home = (): JSX.Element => (
-  <>
-    <Head>
-      <title>Hetmat</title>
-    </Head>
-    <main className="container mx-auto max-w-2xl px-4 pb-2">
-      <RecipeList recipeTitles={recipeTitles} />
-    </main>
-  </>
-);
+const Home = function Home(): JSX.Element {
+  return (
+    <>
+      <Head>
+        <title>Hetmat</title>
+      </Head>
+      <main className="container mx-auto max-w-2xl px-4 pb-2">
+        <RecipeList recipeTitles={recipeTitles} />
+      </main>
+    </>
+  );
+};
 
 export default Home;

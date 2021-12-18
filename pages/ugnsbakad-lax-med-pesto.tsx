@@ -23,15 +23,17 @@ const instructions = [
   "Strö över pinjenötterna.",
 ];
 
-const RecipePage = (): JSX.Element => (
-  <Recipe
-    title={title}
-    amount={amount}
-    unit={unit}
-    timeInMinutes={timeInMinutes}
-    ingredients={ingredients}
-    instructions={instructions}
-  />
-);
+const RecipePage = function RecipePage(): JSX.Element {
+  return (
+    <Recipe
+      title={title}
+      amount={amount}
+      unit={unit}
+      timeInMinutes={timeInMinutes}
+      ingredients={ingredients}
+      instructions={instructions}
+    />
+  );
+};
 
 export default RecipePage;
