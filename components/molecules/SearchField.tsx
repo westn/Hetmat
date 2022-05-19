@@ -17,6 +17,7 @@ const SearchField = function SearchField({
         className="border border-gray-400 w-full px-3 py-2 rounded-sm"
         placeholder="Världens bästa våfflor"
         onChange={searchAction}
+        data-testid="searchfield"
       />
     </label>
   );
