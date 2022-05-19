@@ -1,11 +1,9 @@
-import { FC } from "react";
-
 interface IProps {
   title: string;
 }
 
-const Button: FC<IProps> = ({ title }: IProps) => {
+const ComponentTitle = function ComponentTitle({ title }: IProps): JSX.Element {
   return <h3 className="text-xl font-bold">{title}</h3>;
 };
 
-export default Button;
+export default ComponentTitle;

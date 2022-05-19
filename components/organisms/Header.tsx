@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { Link } from "../atoms";
 
-const Header: FC = () => {
+const Header = function Header(): JSX.Element {
   return (
     <header className="text-center py-3">
       <h1 className="text-4xl">

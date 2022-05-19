@@ -1,10 +1,12 @@
-import { ChangeEvent, FC } from "react";
+import { ChangeEvent } from "react";
 
 interface IProps {
   searchAction: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const SearchField: FC<IProps> = ({ searchAction }: IProps) => {
+const SearchField = function SearchField({
+  searchAction,
+}: IProps): JSX.Element {
   return (
     <label htmlFor="search">
       <span className="block">Sök recept</span>

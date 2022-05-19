@@ -1,11 +1,12 @@
-import { FC } from "react";
 import { ComponentTitle } from "../atoms";
 
 interface IProps {
   instructions: string[];
 }
 
-const Instructions: FC<IProps> = ({ instructions }: IProps) => {
+const Instructions = function Instructions({
+  instructions,
+}: IProps): JSX.Element {
   return (
     <div>
       <ComponentTitle title="Instruktioner" />

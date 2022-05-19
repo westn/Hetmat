@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { FC } from "react";
 import RecipeList from "../components/organisms/RecipeList";
 
 const recipeTitles = [
@@ -22,9 +21,10 @@ const recipeTitles = [
     title: "Älgköttbullar från Jämtland",
     path: "/algkottbullar-fran-jamtland",
   },
+  { title: "Cacio e Pepe", path: "/cacio-e-pepe" },
 ];
 
-const Home: FC = () => {
+const Home = function Home(): JSX.Element {
   return (
     <>
       <Head>

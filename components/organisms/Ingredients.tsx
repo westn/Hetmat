@@ -1,11 +1,10 @@
-import { FC } from "react";
 import { ComponentTitle } from "../atoms";
 
 interface IProps {
-  ingredients: Array<(number | string)[]>; // TODO: Should be tuple, [number, string, string]
+  ingredients: Array<(number | string)[]>; // TODO: Should be of type, Array<[number, string, string]>;
 }
 
-const Ingredients: FC<IProps> = ({ ingredients }: IProps) => {
+const Ingredients = function Ingredients({ ingredients }: IProps): JSX.Element {
   return (
     <div className="max-w-xl mb-4">
       <ComponentTitle title="Ingredienser" />

@@ -1,4 +1,3 @@
-import { FC } from "react";
 import Head from "next/head";
 
 import { Ingredients, Instructions } from "../organisms";
@@ -8,18 +7,18 @@ interface IProps {
   amount?: number;
   unit?: string;
   timeInMinutes?: number;
-  ingredients: Array<(number | string)[]>; // TODO: Should be tuple, [number, string, string]
+  ingredients: Array<(number | string)[]>; // TODO: Should be of type, Array<[number, string, string]>;
   instructions: string[];
 }
 
-const Recipe: FC<IProps> = ({
+const Recipe = function Recipe({
   title,
   amount,
   unit,
   timeInMinutes,
   ingredients,
   instructions,
-}: IProps) => {
+}: IProps): JSX.Element {
   return (
     <>
       <Head>

@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Recipe } from "../components/templates";
 
 const title = "Kyckling à la Malin";
@@ -34,7 +33,7 @@ const instructions = [
   "Servera med t ex hasselbackspotatis, gröna ärtor...",
 ];
 
-const RecipePage: FC = () => {
+const RecipePage = function RecipePage(): JSX.Element {
   return (
     <Recipe
       title={title}

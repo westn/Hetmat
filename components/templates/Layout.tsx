@@ -1,11 +1,11 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import { Header, Footer } from "../organisms";
 
 interface IProps {
   children: ReactNode;
 }
 
-const Layout: FC<IProps> = ({ children }: IProps) => {
+const Layout = function Layout({ children }: IProps): JSX.Element {
   return (
     <>
       <Header />

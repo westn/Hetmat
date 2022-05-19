@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import NextLink from "next/link";
 
 interface IProps {
@@ -9,7 +9,12 @@ interface IProps {
   children: ReactNode;
 }
 
-const Link: FC<IProps> = ({ href, children, className, dataTest }: IProps) => {
+const Link = function Link({
+  href,
+  children,
+  className,
+  dataTest,
+}: IProps): JSX.Element {
   return (
     <NextLink href={href}>
       <a className={className} data-testid={dataTest}>
