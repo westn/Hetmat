@@ -17,7 +17,7 @@ const Link = function Link({
 }: IProps): JSX.Element {
   return (
     <NextLink href={href}>
-      <a className={className} data-test={dataTest}>
+      <a className={className} data-testid={dataTest}>
         {children}
       </a>
     </NextLink>

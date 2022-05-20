@@ -5,7 +5,7 @@ describe("Index page", () => {
   });
 
   it("should have a recipe", () => {
-    const button = cy.get('[data-test="recipebutton"]').first();
+    const button = cy.get('[data-testid="recipebutton"]').first();
     button.should("have.text", "Världens bästa våfflor");
   });
 
