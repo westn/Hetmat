@@ -12,7 +12,7 @@ const ingredients = [
   [1, "msk", "vaniljsocker"],
   [1, "msk", "kaffe"],
   [1.5, "dl", "kokosflingor"],
-  [100, "g", "smör"],
+  [150, "g", "smör"],
 ];
 
 const instructions = [
