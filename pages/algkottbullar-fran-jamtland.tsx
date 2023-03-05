@@ -11,6 +11,7 @@ const ingredients = [
   [8, "st", "enbär"],
   [1, "kg", "älgfärs"],
   [2, "dl", "vispgrädde"],
+  [2, "st", "ägg"],
   [1, "msk", "salt"],
   [0.5, "tsk", "mald vitpeppar"],
 ];
